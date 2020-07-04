@@ -1,40 +1,51 @@
 /*******************/
-/****** FONTS ******/
-/*******************/
-
-
-
-
-
-/*******************/
 /***** NAV BAR *****/
 /*******************/
 
 nav {
-    background: rebeccapurple;
+    background: rgb(70, 200, 204);
     margin-bottom: 2vh; /* white space between nav and hero bar */
 }
 
+/* Center each nav element */
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0; /* push navbar to top of screen */
 }
 
+/* Center contents of each "button" And fit buttons snug in nav bar */
 nav a {
-    display: block;
-    padding: 0.75em 1.5em;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    padding: 0.9em 1.2em;
+    height: 3rem;
 }
 
 nav a:hover {
     background-color: skyblue;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
+    /* Switch to vertical nav bar */
     nav ul {
         display: block;
-        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Make each button 100% width and center text */
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100vw;
+        margin: auto;
+    }
+
+    nav a:active {
+        background-color: skyblue;
     }
 }
 

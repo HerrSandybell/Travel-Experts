@@ -8,10 +8,35 @@
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 0em 0.2em;
+        text-decoration: none;
+        font-size: 20px;
+        height: 3rem;
+    }
+    nav li {
+        margin: 0;
+    }
+    nav img {
+        width: 2.1em;
+        padding: 0.2em;
+    }
+    nav a {
+        text-decoration: none; /*Remove underlines from nav */
+    }
+    nav span {
+        margin-top: 5px; /*Move the logo slightly down*/
+    }
+</style>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="logo galada" href="index.html"><img src="images/logo.svg" alt="Travel Experts Logo"><span>Travel Experts</span></a></li>
             <li><a href="#contact-us">Contact Us</a></li>
             <li><a href="register.html">Register</a></li>
             <li><a href="login.html">Log In</a></li>
@@ -25,7 +50,7 @@
     </header>
 
     <main>
-
+        <img class="logo" src="images/logo.svg" alt="Travel Experts Logo">
     </main>
 
     <footer>

@@ -1,3 +1,32 @@
+/* Galada */
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+/* Raleway */ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6 {
+    font-family: 'Galada', cursive;
+    font-weight: 700;
+    font-size: 5vw;
+}
+
+
 nav a {
     color: white;
 }

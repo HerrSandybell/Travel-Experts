@@ -11,21 +11,27 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: 0; /* push navbar to top of screen */
 }
 
 /* Center contents of each "button" And fit buttons snug in nav bar */
 nav a {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0 5px;
-    padding: 0.9em 1.2em;
+    margin: 0 0.5rem;
+    padding: 0em 1.2rem;
     height: 3rem;
 }
 
 nav a:hover {
     background-color: skyblue;
+}
+
+/* Class to be used for a nav button accompanied by a logo */
+.logo {
+    padding: 0em 0.5em 0 0.2em;
+    height: 3rem;
 }
 
 @media (max-width: 550px) {
@@ -38,8 +44,6 @@ nav a:hover {
 
     /* Make each button 100% width and center text */
     nav a {
-        display: block;
-        text-align: center;
         width: 100vw;
         margin: auto;
     }

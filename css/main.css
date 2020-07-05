@@ -1,4 +1,55 @@
 /*******************/
+/**** UTILITIES ****/
+/*******************/
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+    /* BUTTONS */
+
+.button {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    padding: 0.5em 1.0em;
+    margin-top: 1em;
+
+    border: 0;
+    border-radius: 0.5em;
+}
+
+.button:active {
+    background: linear-gradient(teal, lightgrey)
+}
+
+.call-to-action {
+    background: linear-gradient(rgb(182, 0, 0), maroon);
+    
+    color: white;
+
+    font-size: 1.5rem;
+}
+
+.call-to-action:hover {
+    cursor: pointer;
+    background: linear-gradient(maroon, rgb(182, 0, 0));
+    color: #250202;
+}
+
+/******************/
+/***** STYLES *****/
+/******************/
+
+
+
+/*******************/
 /***** NAV BAR *****/
 /*******************/
 
@@ -18,7 +69,7 @@ nav ul {
 }
 
 /* Center contents of each "button" And fit buttons snug in nav bar */
-nav li a {
+nav a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,6 +80,9 @@ nav li a {
 
 nav a:hover {
     background-color: skyblue;
+    
+    color: #003047;
+    font-weight: 600;
 }
 
 nav a:active {
@@ -37,10 +91,6 @@ nav a:active {
 
 /* Class to be used for a nav button accompanied by a logo */
 .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     padding-right: 0.5em; /* expands button left and right */
     height: 3em;        /* sets the height of the navbar */
 }
@@ -77,12 +127,21 @@ header {
     height: 70vh;
 }
 
+header p {
+    text-align: center;
+    font-size: 1.5rem;
+    
+
+    margin: 0 0 2em 0; 
+}
+
 @media (max-width: 650px) {
     header h1 {
         font-size: 3rem;
     }
-
-
+    header p {
+        font-size: 1rem;
+    }
 }
 
 /*
@@ -91,7 +150,7 @@ header {
 */
 
 /*******************/
-/****** BODY *******/
+/****** MAIN *******/
 /*******************/
 
 
@@ -101,11 +160,7 @@ header {
 /*******************/
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: gray;
+    background-color: rgb(197, 197, 197);
 
     height: 2.25rem;
     margin-top: 1vh;

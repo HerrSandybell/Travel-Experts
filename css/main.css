@@ -69,7 +69,7 @@ nav a {
     justify-content: center;
 
     padding: 0em 1.0em; /* expands button left and right */
-    height: 3em;        /* sets the height of the navbar */
+    height: 4vh;        /* sets the height of the navbar */
 }
 
 nav a:hover {
@@ -86,10 +86,10 @@ nav a:active {
 /* Class to be used for a nav button accompanied by a logo */
 .logo {
     padding-right: 0.5em; /* expands button left and right */
-    height: 3em;        /* sets the height of the navbar */
+    height: 4vh;        /* sets the height of the navbar */
 }
 
-@media (max-width: 770px) {
+@media (max-width: 810px) {
     /* Switch to vertical nav bar */
     nav {
         display: block;
@@ -118,7 +118,7 @@ header {
     background-image: url('https://picsum.photos/id/665/1900/1000');
     background-size: cover;
     background-position: left;
-    height: 70vh;
+    height: 75vh; /* In narrow screens, takes the rest of the view power below the nav bar */
 }
 
 header p {

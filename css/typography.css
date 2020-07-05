@@ -7,10 +7,6 @@
 /* Merriweather */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-html {
-    font-size: 16px;
-}
-
 body {
     font-family: 'Merriweather', serif;
 }
@@ -27,7 +23,7 @@ header h5,
 header h6 {
     font-family: 'Galada', cursive;
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 5rem;
 }
 
 

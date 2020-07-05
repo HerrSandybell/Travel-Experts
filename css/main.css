@@ -21,8 +21,8 @@ nav a {
     align-items: center;
     justify-content: center;
 
-    padding: 0em 1.2em;
-    height: 3em;
+    padding: 0em 1.2em; /* expands button left and right */
+    height: 3em; /* sets the height of the navbar */
 }
 
 nav a:hover {
@@ -35,8 +35,6 @@ nav a:active {
 
 /* Class to be used for a nav button accompanied by a logo */
 .logo {
-
-    height: 3rem;
     margin-right: auto;
 }
 
@@ -44,18 +42,12 @@ nav a:active {
     /* Switch to vertical nav bar */
     nav ul {
         display: block;
-        margin: 0 auto;
-        text-align: center;
     }
 
     /* Make each button 100% width and center text */
     nav a {
         width: 100vw;
         margin: auto; /* fits buttons snugly horizontally */
-    }
-
-    nav a:active {
-        background-color: skyblue;
     }
 }
 
@@ -74,6 +66,14 @@ header {
     height: 70vh;
 }
 
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+
+}
+
 /*
  header h1, header p, header button {
 }
@@ -83,3 +83,24 @@ header {
 /****** BODY *******/
 /*******************/
 
+
+
+/*******************/
+/***** FOOTER ******/
+/*******************/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: gray;
+
+    height: 2.25rem;
+    margin-top: 1vh;
+}
+
+.gitlogo {
+    width: 2em;
+    padding: 0.2em;
+}

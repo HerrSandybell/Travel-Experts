@@ -4,7 +4,7 @@
 
 nav {
     background: rgb(70, 200, 204);
-    margin-bottom: 2vh; /* white space between nav and hero bar */
+    margin-bottom: 1vh; /* white space between nav and hero bar */
 }
 
 /* Center each nav element */
@@ -22,7 +22,7 @@ nav a {
     justify-content: center;
 
     padding: 0em 1.2em; /* expands button left and right */
-    height: 3em; /* sets the height of the navbar */
+    height: 3em;        /* sets the height of the navbar */
 }
 
 nav a:hover {

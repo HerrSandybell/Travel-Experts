@@ -3,6 +3,9 @@
 /*******************/
 
 nav {
+    display: flex;
+    justify-content: space-between;
+
     background: rgb(70, 200, 204);
     margin-bottom: 1vh; /* white space between nav and hero bar */
 }
@@ -10,18 +13,17 @@ nav {
 /* Center each nav element */
 nav ul {
     display: flex;
-    justify-content: end;
 
     margin: 0; /* push navbar to top of screen */
 }
 
 /* Center contents of each "button" And fit buttons snug in nav bar */
-nav a {
+nav li a {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    padding: 0em 1.2em; /* expands button left and right */
+    padding: 0em 1.0em; /* expands button left and right */
     height: 3em;        /* sets the height of the navbar */
 }
 
@@ -35,13 +37,22 @@ nav a:active {
 
 /* Class to be used for a nav button accompanied by a logo */
 .logo {
-    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 0.5em; /* expands button left and right */
+    height: 3em;        /* sets the height of the navbar */
 }
 
-@media (max-width: 650px) {
+@media (max-width: 770px) {
     /* Switch to vertical nav bar */
-    nav ul {
+    nav {
         display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
     }
 
     /* Make each button 100% width and center text */

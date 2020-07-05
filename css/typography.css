@@ -26,10 +26,11 @@ header h6 {
     font-size: 5rem;
 }
 
-
 nav a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .galada {

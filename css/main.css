@@ -10,31 +10,37 @@ nav {
 /* Center each nav element */
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+
     margin: 0; /* push navbar to top of screen */
 }
 
 /* Center contents of each "button" And fit buttons snug in nav bar */
 nav a {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 0 0.5rem;
-    padding: 0em 1.2rem;
-    height: 3rem;
+    justify-content: center;
+
+    padding: 0em 1.2em;
+    height: 3em;
 }
 
 nav a:hover {
     background-color: skyblue;
 }
 
-/* Class to be used for a nav button accompanied by a logo */
-.logo {
-    padding: 0em 0.5em 0 0.2em;
-    height: 3rem;
+nav a:active {
+    background-color: rgb(56, 95, 110);
 }
 
-@media (max-width: 550px) {
+/* Class to be used for a nav button accompanied by a logo */
+.logo {
+
+    height: 3rem;
+    margin-right: auto;
+}
+
+@media (max-width: 650px) {
     /* Switch to vertical nav bar */
     nav ul {
         display: block;
@@ -45,7 +51,7 @@ nav a:hover {
     /* Make each button 100% width and center text */
     nav a {
         width: 100vw;
-        margin: auto;
+        margin: auto; /* fits buttons snugly horizontally */
     }
 
     nav a:active {
@@ -64,7 +70,7 @@ header {
     
     background-image: url('https://picsum.photos/id/665/1900/1000');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     height: 70vh;
 }
 

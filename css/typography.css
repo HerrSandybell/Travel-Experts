@@ -7,6 +7,10 @@
 /* Merriweather */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Merriweather', serif;
 }
@@ -29,6 +33,7 @@ header h6 {
 
 nav a {
     color: white;
+    text-decoration: none;
 }
 
 .galada {

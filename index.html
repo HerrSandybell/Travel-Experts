@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Experts: Home Page</title>
+    <link rel = "icon" type = "image/" href = "logo.svg">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <style>
-    .logo {
-
-        text-decoration: none;
+    nav span {
         font-size: 20px;
-
-    }
-    nav li {
-        margin: 0;
+        margin-top: 5px; /*Move the logo slightly down*/
     }
     nav svg {
-        width: 2.1em;
+        width: 2.5em;
         padding: 0.2em;
         fill: maroon;
     }
-    nav a {
-        text-decoration: none; /*Remove underlines from nav */
-    }
-    nav span {
-        margin-top: 5px; /*Move the logo slightly down*/
+
+    .button {
+        background-color: black;
+        
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        letter-spacing: 0.05em;
+        
+        padding: 0.5em 1.0em;
+        border: 0;
+        border-radius: 0.5em;
     }
 </style>
 <body>
     <nav>
         <ul>
-            <li><a class="logo galada" href="index.html"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="compass" class="logo svg-inline--fa fa-compass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z"></path></svg><span>Travel Experts</span></a></li>
+            <li class="logo galada">
+                <a href="index.html"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="compass" class="svg-inline--fa fa-compass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z"></path></svg><span>Travel Experts</span></a>
+            </li>
+            <li><a href="#destinations">Destinations</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
             <li><a href="register.html">Register</a></li>
             <li><a href="login.html">Log In</a></li>
@@ -43,7 +49,9 @@
     <header>
         <h1>Travel Experts</h1>
         <p>We will find the perfect destination <strong>for you.</strong></p>
-        <a href="register.html"><button>Sign up now!</button></a></header>
+        <a href="register.html">
+            <button class="button">Sign up now!</button>
+        </a>
     </header>
 
     <main>

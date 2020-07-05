@@ -8,6 +8,10 @@
     justify-content: center;
 }
 
+.flex-vertical {    
+    flex-direction: column;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -25,22 +29,12 @@
     border-radius: 0.5em;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .button:active {
     background: linear-gradient(teal, lightgrey)
-}
-
-.call-to-action {
-    background: linear-gradient(rgb(182, 0, 0), maroon);
-    
-    color: white;
-
-    font-size: 1.5rem;
-}
-
-.call-to-action:hover {
-    cursor: pointer;
-    background: linear-gradient(maroon, rgb(182, 0, 0));
-    color: #250202;
 }
 
 /******************/
@@ -107,7 +101,7 @@ nav a:active {
 
     /* Make each button 100% width and center text */
     nav a {
-        width: 100vw;
+        width: 100%;
         margin: auto; /* fits buttons snugly horizontally */
     }
 }
@@ -135,6 +129,19 @@ header p {
     margin: 0 0 2em 0; 
 }
 
+.call-to-action {
+    background: linear-gradient(rgb(182, 0, 0), maroon);
+    
+    color: white;
+
+    font-size: 1.5rem;
+}
+
+.call-to-action:hover {
+    background: linear-gradient(maroon, rgb(182, 0, 0));
+    color: #250202;
+}
+
 @media (max-width: 650px) {
     header h1 {
         font-size: 3rem;
@@ -154,6 +161,56 @@ header p {
 /*******************/
 
 
+/* CONTACT US FORM */
+
+.form-container {
+    display: flex; /* center the form */
+
+    background-image: url("../images/airmail.jpg");
+
+    height: 20em; /* Height is fixed */
+    max-width: 30em;
+    margin: 0.5em auto;
+
+    /* 3D letter effect */
+    box-shadow: 2px 2px 8px black;
+    border-radius: 3px;
+}
+
+form {
+    background-image: url("../images/letterpaper.png"); /* Old Paper effect */
+
+    border-radius: 3px;
+
+    max-height: 20em;
+    width: 100%;
+    max-width: 30em;
+    margin: 0.5em;
+}
+
+form label {
+    margin-top: 1em;
+}
+
+/* Readjust for narrow screens */
+@media (max-width: 28rem) {
+    form label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 32rem) {
+    .form-container {
+        margin: 0.5em;
+    }
+
+    form h2 {
+    margin: 0;
+    }
+}
 
 /*******************/
 /***** FOOTER ******/

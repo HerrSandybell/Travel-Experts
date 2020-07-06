@@ -95,7 +95,6 @@ nav a:hover {
     background-color: skyblue;
     
     color: #003047;
-    font-weight: 600;
 }
 
 nav a:active {
@@ -197,8 +196,8 @@ header p {
     background-image: url("../images/airmail.jpg");
 
     height: 20em; /* Height is fixed */
-    max-width: 30em;
-    margin: 0.5em auto;
+    max-width: 36em;
+    margin: 4em auto;
 
     /* 3D letter effect */
     box-shadow: 2px 2px 8px black;
@@ -212,12 +211,15 @@ form {
 
     max-height: 20em;
     width: 100%;
-    max-width: 30em;
+    max-width: 36em;
     margin: 0.5em;
 }
 
 form label {
-    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+
+    margin-top: 1em;
 }
 
 form h2 {
@@ -226,11 +228,6 @@ form h2 {
 
 form:hover {
     box-shadow: 1px 1px 4px black;
-}
-
-form label {
-    display: flex;
-    align-items: center;
 }
 
 form div {
@@ -244,16 +241,17 @@ form div {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+        margin-top: 0.5em;
     }
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 38rem) {
     .form-container {
-        margin: 0.5em;
+        margin: 2em 1em;
     }
 
     form h2 {
-    margin: 0;
+        margin: 0;
     }
 }
 

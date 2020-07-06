@@ -41,6 +41,34 @@
     background: linear-gradient(teal, rgb(70, 200, 204))
 }
 
+    /* Styling for the burger menu */
+    .hamburger-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        background-color: rgb(2, 57, 78);
+        fill: #fab735;
+        border: 0px;
+        border-radius: 0.3em;
+        margin: 0.5em;
+
+        width: 3em;
+        height: 2.2em;
+    }
+
+    .hamburger-menu:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgba(6, 118, 163, 0.466);
+    }
+
+    /* Styling for when both navbar and burger menu are out */
+    .hamburger-menu.toggled {
+        background-color: steelblue;
+    }
+
+
 /******************/
 /***** STYLES *****/
 /******************/
@@ -60,18 +88,19 @@ nav {
     display: flex;
     justify-content: space-between;
 
-    background: rgb(70, 200, 204);
-    margin-bottom: 1vh; /* white space between nav and hero bar */
+    background: rgb(2, 57, 78);
+    /* margin-bottom: 1vh; white space between nav and hero bar */
 }
 
+/*Move the logo slightly down*/
 nav span {
     font-size: 20px;
-    margin-top: 5px; /*Move the logo slightly down*/
+    margin-top: 5px; 
 }
 nav svg {
     width: 2.2em;
     padding: 0.2em;
-    fill: maroon;
+    fill: #ffb521;
 }
 
 /* Center each nav element */
@@ -91,6 +120,8 @@ nav a {
     min-height: 2.5em; /* sets the height of the navbar */
 }
 
+
+    /* Menu Hover and Active Effects */
 nav a:hover {
     background-color: skyblue;
     
@@ -108,6 +139,13 @@ nav a:active {
         /* sets the height of the navbar */
 }
 
+/* Ease in the nav bar when burger menu is clicked */
+nav.visible {
+    position: absolute;
+    top: 0rem;
+    transition: top ease-in 500ms;
+}
+
 @media (max-width: 810px) {
     /* Switch to vertical nav bar */
     nav {
@@ -122,6 +160,21 @@ nav a:active {
     nav a {
         width: 100%;
         margin: auto; /* fits buttons snugly horizontally */
+    }
+
+    /* When screen is too small, hide navbar */
+    nav {
+        position: absolute;
+        top: -24rem;
+        width: 100%;
+        transition: top ease-out 300ms;
+    }
+}
+
+/* When screen is too big, hide burger menu */
+@media (min-width: 810px) {
+    .hamburger-menu {
+        display: none;
     }
 }
 
@@ -142,6 +195,7 @@ header {
 }
 
 header h1 {
+    text-align: center;
     margin: 0;
     padding: 0;
 
@@ -151,22 +205,23 @@ header h1 {
 header p {
     text-align: center;
     font-size: 1.5rem;
-    
 
     margin: 0 0 3em 0; 
 }
 
 .call-to-action {
-    background: linear-gradient(rgb(167, 0, 0), rgb(116, 0, 0));
+    background: linear-gradient(#fab735, #8c5d00);
     
-    color: white;
+    color: black;
 
     font-size: 1.5rem;
+
+    margin-bottom: 5em;
 }
 
 .call-to-action:hover {
-    background: linear-gradient(rgb(116, 0, 0), rgb(167, 0, 0));
-    color: #250202;
+    background: linear-gradient(#8c5d00 10%, #fab735 90%);
+    color: #ffffff;
 }
 
 @media (max-width: 650px) {
@@ -174,7 +229,7 @@ header p {
         font-size: 3rem;
     }
     header p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -200,7 +255,7 @@ header p {
     margin: 4em auto;
 
     /* 3D letter effect */
-    box-shadow: 2px 2px 8px black;
+    box-shadow: 1px 1px 10px grey;
     border-radius: 3px;
 }
 
@@ -208,6 +263,8 @@ form {
     background-image: url("../images/letterpaper.png"); /* Old Paper effect */
 
     border-radius: 3px;
+
+    /* transform: rotate(-0.5deg); */
 
     max-height: 20em;
     width: 100%;
@@ -227,7 +284,7 @@ form h2 {
 }
 
 form:hover {
-    box-shadow: 1px 1px 4px black;
+    box-shadow: 1px 1px 4px grey;
 }
 
 form div {

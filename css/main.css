@@ -45,7 +45,12 @@
 /***** STYLES *****/
 /******************/
 
+body {
+    display: flex;
+    flex-direction: column;
 
+    min-height: 100vh;
+}
 
 /*******************/
 /***** NAV BAR *****/
@@ -57,6 +62,16 @@ nav {
 
     background: rgb(70, 200, 204);
     margin-bottom: 1vh; /* white space between nav and hero bar */
+}
+
+nav span {
+    font-size: 20px;
+    margin-top: 5px; /*Move the logo slightly down*/
+}
+nav svg {
+    width: 2.2em;
+    padding: 0.2em;
+    fill: maroon;
 }
 
 /* Center each nav element */
@@ -73,7 +88,7 @@ nav a {
     justify-content: center;
 
     padding: 0em 1.0em; /* expands button left and right */
-    height: 4vh;        /* sets the height of the navbar */
+    min-height: 2.5em; /* sets the height of the navbar */
 }
 
 nav a:hover {
@@ -90,7 +105,8 @@ nav a:active {
 /* Class to be used for a nav button accompanied by a logo */
 .logo {
     padding: 0 0.5em 0 0; /* expands button left and right */
-    height: 4vh;        /* sets the height of the navbar */
+    min-height: 2.5em;
+        /* sets the height of the navbar */
 }
 
 @media (max-width: 810px) {
@@ -123,7 +139,7 @@ header {
     background-image: url('https://picsum.photos/id/665/1900/1000');
     background-size: cover;
     background-position: left;
-    height: 75vh; /* In narrow screens, takes the rest of the view power below the nav bar */
+    height: 70vh; /* In narrow screens, takes the rest of the view power below the nav bar */
 }
 
 header h1 {
@@ -208,6 +224,19 @@ form h2 {
     margin: 0.8em 0;
 }
 
+form:hover {
+    box-shadow: 1px 1px 4px black;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+}
+
+form div {
+    margin-right: 5px;
+}
+
 /* Readjust for narrow screens */
 @media (max-width: 28rem) {
     form label {
@@ -238,10 +267,13 @@ input, textarea {
 /*******************/
 
 footer {
-    background-color: rgb(197, 197, 197);
+    position: relative;
 
+    width: 100%;
+    margin-top: auto;
     height: 2.25rem;
-    margin-top: 1vh;
+
+    background-color: rgb(197, 197, 197);
 }
 
 .gitlogo {

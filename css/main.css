@@ -150,6 +150,12 @@ nav.visible {
     /* Switch to vertical nav bar */
     nav {
         display: block;
+
+        position: absolute;
+        top: -24rem;    /* When screen is too small, hide navbar */
+ 
+        width: 100%;
+        transition: top ease-out 300ms;
     }
 
     nav ul {
@@ -160,14 +166,6 @@ nav.visible {
     nav a {
         width: 100%;
         margin: auto; /* fits buttons snugly horizontally */
-    }
-
-    /* When screen is too small, hide navbar */
-    nav {
-        position: absolute;
-        top: -24rem;
-        width: 100%;
-        transition: top ease-out 300ms;
     }
 }
 

@@ -33,6 +33,15 @@
             padding: 20em;
             margin: 0.5em auto;
         } */
+
+        fieldset {
+            border: 0;
+        }
+
+        legend {
+            font-size: 1.5rem;
+            margin: 0.5em auto 0 auto;
+        }
     
     </style>
 </head>
@@ -67,26 +76,29 @@
             <form
             action="https://formspree.io/xjvaarpr"
             method="POST"
-            class="center flex-vertical"
+            class="center"
             >
-                <h2>Contact Us</h2>
+                <fieldset
+                class="center flex-vertical">
+                    <legend>Contact Us</legend>
 
-                <label for="name">
-                    Your name:
-                    <input id="name"  type="text" name="name">
-                </label>
-                
-                <label for="email">
-                    Your email:
-                    <input id="email" type="text" name="email">
-                </label>
+                    <label for="name">
+                        Your name:
+                        <input id="name"  type="text" name="name">
+                    </label>
+                    
+                    <label for="email">
+                        Your email:
+                        <input id="email" type="text" name="email">
+                    </label>
 
-                <label for="message">
-                    Your message:
-                    <textarea id="message" name="message"></textarea>
-                </label>
-                
-                <button class="button" type="submit">Send</button>
+                    <label for="message">
+                        Your message:
+                        <textarea id="message" name="message"></textarea>
+                    </label>
+                    
+                    <button class="button" type="submit">Send</button>
+                </fieldset>
             </form>
         </div>      
     </main>

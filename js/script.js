@@ -19,3 +19,5 @@ for (i=0; i < imgList.length; i++) {
 document.querySelector('.gallery').innerHTML = galleryTemplate;
 
 // END GALLERY CODE //
+
+//

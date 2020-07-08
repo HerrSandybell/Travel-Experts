@@ -2,6 +2,7 @@
 /**** UTILITIES ****/
 /*******************/
 
+/* This class centers all items and takes them down to their min size.*/
 .center {
     display: flex;
     align-items: center;
@@ -16,61 +17,95 @@
     justify-content: space-between;
 }
 
-    /* BUTTONS */
+/* This class centers a box vertically and horizontally within another box */
+.center-box {
+    margin: auto;
+}
 
-    .button {
-        display: block;
-        background-color: #fab735;
+/* Form styles */
 
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 700;
-        letter-spacing: 0.05em;
+.registration-form {
+    background-color: rgb(2, 57, 78);
+    color: white;
+    /* Add a thick border to make form stand out */
+    border: 2px solid white; 
+    border-radius: 8px;
+}
 
-        padding: 0.5em 1.0em;
-        margin: 1em 0;
+.registration-form a {
+    color: #ffb521;
+}
+.registration-form a:hover {
+    color: rgb(174, 16, 50);
+}
 
-        border: 0;
-        border-radius: 1em;
-    }
 
-    .button:hover {
-        cursor: pointer;
-        background-color: teal;
-        color: white;
-    }
+/* BUTTONS */
 
-    .button:active {
-        background: linear-gradient(teal, rgb(70, 200, 204))
-    }
+.button {
+    display: block;
+    background-color: #fab735;
+    box-shadow: 0px 0px 3px grey;
 
-    /* Styling for the burger menu */
-    .hamburger-menu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.05em;
 
-        background-color: rgb(2, 57, 78);
-        fill: #fab735;
-        border: 0px;
-        border-radius: 0.3em;
-        margin: 0.5em;
+    padding: 0.5em 1.0em;
+    margin: 1em 0;
 
-        width: 3em;
-        height: 2.2em;
-    }
+    border: 0;
+    border-radius: 1em;
+}
 
-    .hamburger-menu:hover {
-        cursor: pointer;
-        box-shadow: 2px 2px 5px rgba(6, 118, 163, 0.466);
-    }
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(174, 16, 50);
+    color: white;
 
-    /* Styling for when both navbar and burger menu are out */
-    .hamburger-menu.toggled {
-        background-color: steelblue;
-    }
+}
 
+.button:active {
+    background: linear-gradient(teal, rgb(70, 200, 204))
+}
+
+/* Styling for the burger menu */
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: rgb(2, 57, 78);
+    fill: #fab735;
+    border: 0px;
+    border-radius: 0.3em;
+    margin: 0.5em;
+
+    width: 3em;
+    height: 2.2em;
+}
+
+.hamburger-menu:hover {
+    cursor: pointer;
+    fill: rgb(174, 16, 50);
+}
+
+/* Styling for when both navbar and burger menu are out */
+.hamburger-menu.toggled {
+    background-color: steelblue;
+}
+
+
+/* BACKGROUNDS */
+
+.hill-background {
+    background-image: url('https://i.picsum.photos/id/251/5184/3456.jpg?hmac=6vDCffC-BtWehSjjIcBYrfML3N36urwiPQ0MWAYt3YU');
+    background-size: cover;
+    background-position: center;
+}
+    
 
 /******************/
 /***** STYLES *****/
@@ -92,7 +127,6 @@ nav {
     justify-content: space-between;
 
     background: rgb(2, 57, 78);
-    /* margin-bottom: 1vh; white space between nav and hero bar */
 }
 
 /*Move the logo slightly down*/
@@ -247,11 +281,16 @@ header p {
 
 /* CONTACT US FORM */
 
+form {
+    margin: 5vh 0; /* Leave some space between form and other content. */
+}
+
 fieldset {
     border: 0;
 }
 
 legend {
+    text-decoration: underline;
     font-size: 1.5rem;
     margin: 0.5em auto 0 auto;
 }
@@ -259,12 +298,7 @@ legend {
 form label {
     display: flex;
     align-items: center;
-
     margin-top: 1em;
-}
-
-form h2 {
-    margin: 0.8em 0;
 }
 
 form:hover {
@@ -286,7 +320,6 @@ textarea {
 
     background-image: url("../images/airmail.jpg");
 
-    min-height: 100%; /* Height is fixed */
     max-width: 36em;
     min-width: 15em;
     margin: 4em auto;
@@ -296,7 +329,7 @@ textarea {
     border-radius: 3px;
 }
 
-.form-container {
+.letter-paper {
     background-image: url("../images/letterpaper.png"); /* Old Paper effect */
 
     border-radius: 3px;
@@ -306,8 +339,6 @@ textarea {
     margin: 0.5em;
 }
 
-
-
 /* Readjust for narrow screens */
 @media (max-width: 31rem) {
     form label {
@@ -315,21 +346,12 @@ textarea {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
-    margin-top: 0.5em;
     }
-    /* textarea {
-        resize: none;
-    } */
 }
-
-@media (max-width: 38rem) {
+/* When the screen is small, make a margin on the sides. */
+@media (max-width: 31rem) {
     .letter-box {
-        margin: 2em 1em;
-    }
-
-    form h2 {
-        margin: 0;
+        margin: 0em 1em;
     }
 }
 

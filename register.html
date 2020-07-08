@@ -10,20 +10,15 @@
     <link rel="stylesheet" as="image" href="css/main.css">
 </head>
 <style>
-label {
+
+/* label {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-}
+} */
 
-.registration-form {
-    height: 20em;
-}
-fieldset {
-    /* height: 100%; */
-}
 </style>
-<body>
+<body class="hill-background">
 
     <button class="hamburger-menu center">
         <svg  xmlns="http://www.w3.org/2000/svg" id="Layer_1" style=`` viewBox="0 0 32 32" width="32px" height="32px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1"><path d="M 4 10 h 24 c 1.104 0 2 -0.896 2 -2 s -0.896 -2 -2 -2 H 4 C 2.896 6 2 6.896 2 8 S 2.896 10 4 10 Z M 28 14 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 14 28 14 Z M 28 22 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 22 28 22 Z" /></svg></i>
@@ -36,15 +31,14 @@ fieldset {
         
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="gallery.html">Destinations</a></li>
             <li><a href="index.html#contact-us">Contact Us</a></li>
             <li><a href="register.html">Register</a></li>
             <li><a href="login.html">Log In</a></li>
         </ul>  
     </nav>
-
-    <main  style="margin: auto">
-        <!-- modify this form HTML and place wherever you want your form -->
+    <!-- The centering in main shrinks down the form to its minimum size -->
+    <main class="center center-box">
 
         <form
         action="https://formspree.io/xrgyyjwg"
@@ -54,27 +48,18 @@ fieldset {
             <fieldset class="center flex-vertical">
                 <legend>Registration Form</legend>
 
-                <label>
-                    Email:
+                <label>Email:</label>
                     <input type="email" name="_replyto" required>
-                </label>
 
-                <label>
-                    Username:
+                <label>Username:</label>
                     <input type="text" name="message" required></textarea>
-                </label>
-
-                <label>
-                    Password:
+                
+                <label>Password:</label>
                     <input type="text" name="message" required></textarea>
-                </label>
+              
+                <button class="button" type="submit">Register</button>
 
-                <label>
-                    Repeat Password:
-                    <input type="text" name="message" required></textarea>
-                </label>
-
-                <button type="submit">Submit</button>
+                <p>Already have an account? <a href="login.html">Log in.</a></p>
 
             </fieldset>
         </form>

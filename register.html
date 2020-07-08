@@ -10,7 +10,18 @@
     <link rel="stylesheet" as="image" href="css/main.css">
 </head>
 <style>
+label {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
+.registration-form {
+    height: 20em;
+}
+fieldset {
+    /* height: 100%; */
+}
 </style>
 <body>
 
@@ -32,8 +43,42 @@
         </ul>  
     </nav>
 
-    <main>
-        
+    <main  style="margin: auto">
+        <!-- modify this form HTML and place wherever you want your form -->
+
+        <form
+        action="https://formspree.io/xrgyyjwg"
+        method="POST"
+        class="registration-form"
+        >
+            <fieldset class="center flex-vertical">
+                <legend>Registration Form</legend>
+
+                <label>
+                    Email:
+                    <input type="email" name="_replyto" required>
+                </label>
+
+                <label>
+                    Username:
+                    <input type="text" name="message" required></textarea>
+                </label>
+
+                <label>
+                    Password:
+                    <input type="text" name="message" required></textarea>
+                </label>
+
+                <label>
+                    Repeat Password:
+                    <input type="text" name="message" required></textarea>
+                </label>
+
+                <button type="submit">Submit</button>
+
+            </fieldset>
+        </form>
+
     </main>
 
     <footer class="center space-between">

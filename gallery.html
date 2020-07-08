@@ -8,15 +8,25 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" as="image" href="css/main.css">
-</head>
-<style>
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-</style>
+        max-width: 1000px;
+        margin: auto
+      }
+      img {
+        margin: 10px;
+      }
+    </style>
+</head>
 <body>
 
-    <button class="hamburger-menu center">
-        <svg  xmlns="http://www.w3.org/2000/svg" id="Layer_1" style=`` viewBox="0 0 32 32" width="32px" height="32px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1"><path d="M 4 10 h 24 c 1.104 0 2 -0.896 2 -2 s -0.896 -2 -2 -2 H 4 C 2.896 6 2 6.896 2 8 S 2.896 10 4 10 Z M 28 14 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 14 28 14 Z M 28 22 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 22 28 22 Z" /></svg></i>
-    </button>
+  <button class="hamburger-menu center">
+      <svg  xmlns="http://www.w3.org/2000/svg" id="Layer_1" style=`` viewBox="0 0 32 32" width="32px" height="32px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1"><path d="M 4 10 h 24 c 1.104 0 2 -0.896 2 -2 s -0.896 -2 -2 -2 H 4 C 2.896 6 2 6.896 2 8 S 2.896 10 4 10 Z M 28 14 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 14 28 14 Z M 28 22 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 22 28 22 Z" /></svg></i>
+  </button>
 
     <nav>
         <container>
@@ -33,7 +43,9 @@
     </nav>
 
     <main>
-        
+        <div class="gallery">
+
+        </div>
     </main>
 
     <footer class="center space-between">
@@ -44,7 +56,7 @@
         <p></p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src='js/script.js'></script>
 
 </body>
 

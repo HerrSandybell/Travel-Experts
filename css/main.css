@@ -341,21 +341,20 @@ textarea {
 }
 
 /* Readjust for narrow screens */
-@media (max-width: 32rem) {
+@media (max-width: 30rem) {
     form label {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
+}
+/* When the screen is small, make a margin on the sides. */
+@media (max-width: 37rem) {
     .letter-box {
         margin-left: 1em;
         margin-right: 1em;
     }
-}
-/* When the screen is small, make a margin on the sides. */
-@media (max-width: 31rem) {
-
 }
 
 /*******************/

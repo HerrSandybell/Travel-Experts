@@ -282,7 +282,7 @@ header p {
 /* CONTACT US FORM */
 
 form {
-    margin: 5vh 0; /* Leave some space between form and other content. */
+    margin: 5vh; /* Leave some space between form and other content. */
 }
 
 fieldset {
@@ -296,8 +296,9 @@ legend {
 }
 
 form label {
+    /* Centers the text next to the box. */
     display: flex;
-    align-items: center;
+    align-items: center; 
     margin-top: 1em;
 }
 
@@ -320,7 +321,7 @@ textarea {
 
     background-image: url("../images/airmail.jpg");
 
-    max-width: 36em;
+    max-width: 34em;
     min-width: 15em;
     margin: 4em auto;
 
@@ -340,19 +341,21 @@ textarea {
 }
 
 /* Readjust for narrow screens */
-@media (max-width: 31rem) {
+@media (max-width: 32rem) {
     form label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .letter-box {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
 /* When the screen is small, make a margin on the sides. */
 @media (max-width: 31rem) {
-    .letter-box {
-        margin: 0em 1em;
-    }
+
 }
 
 /*******************/

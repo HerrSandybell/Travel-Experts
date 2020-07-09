@@ -3,25 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Experts: Log In</title>
-    <link rel = "icon" type = "image/" href = "logo.svg">
+    <title>Travel Experts: Login</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" as="image" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    </style>
 </head>
-<style>
 
-</style>
 <body class="hill-background">
 
     <button class="hamburger-menu center">
-        <svg  xmlns="http://www.w3.org/2000/svg" id="Layer_1" style=`` viewBox="0 0 32 32" width="32px" height="32px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1"><path d="M 4 10 h 24 c 1.104 0 2 -0.896 2 -2 s -0.896 -2 -2 -2 H 4 C 2.896 6 2 6.896 2 8 S 2.896 10 4 10 Z M 28 14 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 14 28 14 Z M 28 22 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 22 28 22 Z" /></svg></i>
+        <svg  xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 32 32" width="32px" height="32px" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:space="preserve" version="1.1"><path d="M 4 10 h 24 c 1.104 0 2 -0.896 2 -2 s -0.896 -2 -2 -2 H 4 C 2.896 6 2 6.896 2 8 S 2.896 10 4 10 Z M 28 14 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 14 28 14 Z M 28 22 H 4 c -1.104 0 -2 0.896 -2 2 s 0.896 2 2 2 h 24 c 1.104 0 2 -0.896 2 -2 S 29.104 22 28 22 Z" /></svg>
     </button>
 
     <nav>
-        <container>
-            <a class="center logo galada" href="index.html"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="compass" class="svg-inline--fa fa-compass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z"></path></svg><span>Travel Experts</span></a>
-        </container>
+        <a class="center logo galada" href="index.html"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="compass" class="svg-inline--fa fa-compass fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z"></path></svg><span>Travel Experts</span></a>
         
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -33,29 +30,32 @@
     </nav>
 
     <!-- The centering in main shrinks down the form to its minimum size -->
-    <main class="center center-box">
+    <main class="center flex-column">
 
-        <form
-        action="https://formspree.io/mqkyyjbe"
-        method="POST"
-        class="registration-form"
-        >
-            <fieldset class="center flex-vertical">
-                <legend>Login</legend>
+        <header class="page-title"><h1>Travel Experts</h1></header>
+        
+        <div class="center flex-grow-1">
+            <form
+            action="https://formspree.io/mqkyyjbe"
+            method="POST"
+            class="registration-form"
+            >
+                <fieldset class="center flex-vertical">
+                    <legend>Login</legend>
 
-                <label>Email:</label>
-                    <input type="email" name="_replyto" required>
-               
-                <label>Password:</label>
-                    <input type="text" name="message" required></textarea>
-              
-                <button class="button" type="submit">Log in</button>
+                    <label>Email:</label>
+                        <input type="email" name="login-email" required>
+                
+                    <label>Password:</label>
+                        <input type="password" name="password" required>
+                
+                    <button class="button" type="submit">Log in</button>
 
-                <p>Don't have an account? <a href="register.html">Register here.</a></p>
+                    <p>Don't have an account? <a href="register.html">Register here.</a></p>
 
-            </fieldset>
-        </form>
-
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer class="center space-between">

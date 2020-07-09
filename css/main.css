@@ -13,6 +13,14 @@
     flex-direction: column;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
 .space-between {
     justify-content: space-between;
 }
@@ -20,6 +28,13 @@
 /* This class centers a box vertically and horizontally within another box */
 .center-box {
     margin: auto;
+}
+
+/* This class relocates a title to the top of the page without affecting the page size */
+.page-title {
+    position: absolute;
+    top: 0;
+    z-index: -1; /* -1 Z index needed to hide title under burger menu */
 }
 
 /* Form styles */
@@ -104,6 +119,12 @@
     background-image: url('https://i.picsum.photos/id/251/5184/3456.jpg?hmac=6vDCffC-BtWehSjjIcBYrfML3N36urwiPQ0MWAYt3YU');
     background-size: cover;
     background-position: center;
+}
+
+.sitting-man {
+    background-image: url('https://picsum.photos/id/665/1900/1000');
+    background-size: cover;
+    background-position: left;
 }
     
 
@@ -229,19 +250,16 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
-    background-image: url('https://picsum.photos/id/665/1900/1000');
-    background-size: cover;
-    background-position: left;
+}
+
+.hero-section {
     height: 70vh; /* In narrow screens, takes the rest of the view power below the nav bar */
 }
 
 header h1 {
     text-align: center;
-    margin: 0;
     padding: 0;
-
-    /* margin: 1em 0 1em 0; */
+    margin-top: 1em;
 }
 
 header p {
@@ -255,7 +273,6 @@ header p {
     background: linear-gradient(#fab735, #8c5d00);
     
     color: black;
-
     font-size: 1.5rem;
 
     margin-bottom: 5em;
@@ -267,6 +284,9 @@ header p {
 }
 
 @media (max-width: 650px) {
+    .hero-section {
+        height: 100vh;
+    }
     header h1 {
         font-size: 3rem;
     }
@@ -274,11 +294,6 @@ header p {
         font-size: 1.2rem;
     }
 }
-
-/*
- header h1, header p, header button {
-}
-*/
 
 /*******************/
 /****** MAIN *******/
@@ -322,21 +337,24 @@ textarea {
     min-height: 2ch;
 }
 
+.checkbox {
+    margin: 5px;
+}
+
 .registration-form .button {
     margin-bottom: 0; /* Tweaking bottom margin of buttons inside login/registration forms. */
 }
 
 .letter-box {
-    display: flex; /* center the form */
-
     background-image: url("../images/airmail.jpg");
 
-    max-width: 34em;
-    min-width: 15em;
-    margin: 4em auto;
+    width: 34em;
+    min-width: 16em;
+
+    margin: 3em 1em; /* introduces margin between letter box and other elements. */
 
     /* 3D letter effect */
-    box-shadow: 1px 1px 10px grey;
+    box-shadow: 1px 1px 8px grey;
     border-radius: 3px;
 }
 
@@ -353,19 +371,16 @@ textarea {
 /* Readjust for narrow screens */
 @media (max-width: 30rem) {
     form label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
     }
 }
 /* When the screen is small, make a margin on the sides. */
-@media (max-width: 37rem) {
+/* @media (max-width: 37rem) {
     .letter-box {
         margin-left: 1em;
         margin-right: 1em;
     }
-}
+} */
 
 /*******************/
 /***** FOOTER ******/

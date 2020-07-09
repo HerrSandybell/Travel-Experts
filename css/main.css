@@ -350,20 +350,18 @@ textarea {
     }
 }
 /* When the screen is small, make a margin on the sides. */
-@media (max-width: 37rem) {
+/* @media (max-width: 37rem) {
     .letter-box {
         margin-left: 1em;
         margin-right: 1em;
     }
-}
+} */
 
 /*******************/
 /***** FOOTER ******/
 /*******************/
 
 footer {
-    position: relative;
-
     width: 100%;
     margin-top: auto;
     height: 2.25rem;

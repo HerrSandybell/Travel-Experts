@@ -118,6 +118,12 @@ body {
     min-height: 100vh;
 }
 
+
+main {
+    flex-grow: 1; /* Grows main section and pushed header and footer out. */
+}
+
+
 /*******************/
 /***** NAV BAR *****/
 /*******************/
@@ -282,7 +288,7 @@ header p {
 /* CONTACT US FORM */
 
 form {
-    margin: 5vh; /* Leave some space between form and other content. */
+    margin: 2em 0.5em; /* Leave some space between form and other content. */
 }
 
 fieldset {
@@ -299,7 +305,7 @@ form label {
     /* Centers the text next to the box. */
     display: flex;
     align-items: center; 
-    margin-top: 1em;
+    margin: 0.5em auto 0.1em auto;
 }
 
 form:hover {
@@ -314,6 +320,10 @@ input, textarea {
 textarea {
     max-width: 25ch; /* limit horizontal resizing.*/
     min-height: 2ch;
+}
+
+.registration-form .button {
+    margin-bottom: 0; /* Tweaking bottom margin of buttons inside login/registration forms. */
 }
 
 .letter-box {
@@ -363,7 +373,6 @@ textarea {
 
 footer {
     width: 100%;
-    margin-top: auto;
     height: 2.25rem;
 
     background-color: rgb(197, 197, 197);

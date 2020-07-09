@@ -11,11 +11,15 @@
 </head>
 <style>
 
-/* label {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-} */
+    /* label {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    } */
+    
+    .checkbox {
+        margin: 5px;
+    }
 
 </style>
 <body class="hill-background">
@@ -52,11 +56,14 @@
                     <input type="email" name="_replyto" required>
 
                 <label>Username:</label>
-                    <input type="text" name="message" required></textarea>
+                    <input type="text" name="username" required>
                 
                 <label>Password:</label>
-                    <input type="text" name="message" required></textarea>
+                    <input type="text" name="password" required>
               
+                <label>Sign up to your newsletter?<input class="checkbox" type="checkbox" name="newsletter"></label>
+
+
                 <button class="button" type="submit">Register</button>
 
                 <p>Already have an account? <a href="login.html">Log in.</a></p>

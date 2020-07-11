@@ -50,20 +50,17 @@
                 class="center flex-vertical">
                     <legend>Contact Us</legend>
 
-                    <label for="name">
-                        Your name:
+                    <label for="name" class="required">Your name:</label>
                         <input id="name"  type="text" name="name" required>
-                    </label>
-                    
-                    <label for="email">
-                        Your email:
-                        <input id="email" type="text" name="email" required>
-                    </label>
 
-                    <label for="message">
-                        Your message:
+                    
+                    <label for="email" class="required">Your email:</label>
+                        <input id="email" type="text" name="email" required>
+
+
+                    <label for="message"  class="required">Your message:</label>
                         <textarea id="message" name="message" required></textarea>
-                    </label>
+
                     
                     <button class="button" type="submit">Send</button>
                 </fieldset>

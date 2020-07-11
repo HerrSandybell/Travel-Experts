@@ -42,21 +42,32 @@
                 <fieldset class="center flex-vertical">
                     <legend>Registration Form</legend>
 
-                    <label>Email:</label>
-                        <input type="email" name="registration-email" required>
+                    <div class="input-field center flex-vertical">
+                        <label for="user-email" class="required">Email</label>
+                        <input id="user-email" type="email" name="registration-email" required>
+                        <span role="tool-tip">Valid Email Required.</span>
+                    </div>
 
-                    <label>Username:</label>
-                        <input type="text" name="username" required>
+                    <div class="input-field center flex-vertical">
+                        <label for="user-name" class="required">Username</label>
+                        <input id="user-name" type="text" name="username" required>
+                        <span role="tool-tip">You must enter a username.</span>
+                    </div>
                     
-                    <label>Password:</label>
-                        <input type="password" name="password" required>
+                    <div class="input-field center flex-vertical">
+                        <label for="user-password" class="required">Password</label>
+                        <input id="user-password" type="password" name="password" minlength="8" required>
+                        <span role="tool-tip">Password must be minimum 8 characters.</span>
+                    </div>
 
-                    <label>Confirm Password:</label>
-                        <input type="password" name="password-confirm" required>
+                    <div class="input-field center flex-vertical">
+                        <label for="password-confirm" class="required">Confirm Password</label>
+                        <input id="password-confirm" type="password" name="password-confirm" minlength="8" required>
+                        <span role="tool-tip">Password must be minimum 8 characters.</span>
+                    </div>
                 
-                    <label>Sign up to your newsletter?<input class="checkbox" type="checkbox" name="newsletter"></label>
-
-
+                    <label for="">Sign up to your newsletter?<input id="" class="checkbox" type="checkbox" name="newsletter"></label>
+                    
                     <button class="button" type="submit">Register</button>
 
                     <p>Already have an account? <a href="login.html">Log in.</a></p>

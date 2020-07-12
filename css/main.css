@@ -4,144 +4,144 @@
 
 /* This class centers all items and takes them down to their min size.*/
 .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.flex-vertical {    
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-grow-1 {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 /* This class centers a box vertically and horizontally within another box */
 .center-box {
-    margin: auto;
+  margin: auto;
 }
 
 /* This class relocates a title to the top of the page without affecting the page size */
 .page-title {
-    position: absolute;
-    top: 0;
-    z-index: -1; /* -1 Z index needed to hide title under burger menu */
+  position: absolute;
+  top: 0;
+  z-index: -1; /* -1 Z index needed to hide title under burger menu */
 }
 
 /* Form styles */
 
 .registration-form {
-    background-color: rgb(2, 57, 78);
-    color: white;
-    /* Add a thick border to make form stand out */
-    border: 2px solid white; 
-    border-radius: 8px;
+  background-color: rgb(2, 57, 78);
+  color: white;
+  /* Add a thick border to make form stand out */
+  border: 2px solid white; 
+  border-radius: 8px;
 }
 
 .registration-form a {
-    color: #ffb521;
+  color: #ffb521;
 }
 .registration-form a:hover {
-    color: rgb(174, 16, 50);
+  color: rgb(174, 16, 50);
 }
 
 
 /* BUTTONS */
 
 .button {
-    display: block;
-    background-color: #fab735;
-    box-shadow: 0px 0px 3px grey;
+  display: block;
+  background-color: #fab735;
+  box-shadow: 0px 0px 3px grey;
 
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 
-    padding: 0.5em 1.0em;
-    margin: 1em 0;
+  padding: 0.5em 1.0em;
+  margin: 1em 0;
 
-    border: 0;
-    border-radius: 1em;
+  border: 0;
+  border-radius: 1em;
 }
 
 .button:hover {
-    cursor: pointer;
-    background-color: rgb(174, 16, 50);
-    color: white;
+  cursor: pointer;
+  background-color: rgb(174, 16, 50);
+  color: white;
 
 }
 
 .button:active {
-    background: linear-gradient(teal, rgb(70, 200, 204))
+  background: linear-gradient(teal, rgb(70, 200, 204))
 }
 
 /* Styling for the burger menu */
 .hamburger-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-    background-color: rgb(2, 57, 78);
-    fill: #fab735;
-    border: 0px;
-    border-radius: 0.3em;
-    margin: 0.5em;
+  background-color: rgb(2, 57, 78);
+  fill: #fab735;
+  border: 0px;
+  border-radius: 0.3em;
+  margin: 0.5em;
 
-    width: 3em;
-    height: 2.2em;
+  width: 3em;
+  height: 2.2em;
 }
 
 .hamburger-menu:hover {
-    cursor: pointer;
-    fill: rgb(174, 16, 50);
+  cursor: pointer;
+  fill: rgb(174, 16, 50);
 }
 
 /* Styling for when both navbar and burger menu are out */
 .hamburger-menu.toggled {
-    background-color: steelblue;
+  background-color: steelblue;
 }
 
 
 /* BACKGROUNDS */
 
 .hill-background {
-    background-image: url('https://i.picsum.photos/id/251/5184/3456.jpg?hmac=6vDCffC-BtWehSjjIcBYrfML3N36urwiPQ0MWAYt3YU');
-    background-size: cover;
-    background-position: center;
+  background-image: url('https://i.picsum.photos/id/251/5184/3456.jpg?hmac=6vDCffC-BtWehSjjIcBYrfML3N36urwiPQ0MWAYt3YU');
+  background-size: cover;
+  background-position: center;
 }
 
 .sitting-man {
-    background-image: url('https://picsum.photos/id/665/1900/1000');
-    background-size: cover;
-    background-position: left;
+  background-image: url('https://picsum.photos/id/665/1900/1000');
+  background-size: cover;
+  background-position: left;
 }
-    
+  
 
 /******************/
 /***** STYLES *****/
 /******************/
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 
 main {
-    flex-grow: 1; /* Grows main section and pushed header and footer out. */
+  flex-grow: 1; /* Grows main section and pushed header and footer out. */
 }
 
 
@@ -150,95 +150,95 @@ main {
 /*******************/
 
 nav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    background: rgb(2, 57, 78);
+  background: rgb(2, 57, 78);
 }
 
 /*Move the logo slightly down*/
 nav span {
-    font-size: 20px;
-    margin-top: 5px; 
+  font-size: 20px;
+  margin-top: 5px; 
 }
 nav svg {
-    width: 2.2em;
-    padding: 0.2em;
-    fill: #ffb521;
+  width: 2.2em;
+  padding: 0.2em;
+  fill: #ffb521;
 }
 
 /* Center each nav element */
 nav ul {
-    display: flex;
+  display: flex;
 
-    margin: 0; /* push navbar to top of screen */
+  margin: 0; /* push navbar to top of screen */
 }
 
 /* Center contents of each "button" And fit buttons snug in nav bar */
 nav a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: 0em 1.0em; /* expands button left and right */
-    min-height: 2.5em; /* sets the height of the navbar */
+  padding: 0em 1.0em; /* expands button left and right */
+  min-height: 2.5em; /* sets the height of the navbar */
 }
 
 
-    /* Menu Hover and Active Effects */
+  /* Menu Hover and Active Effects */
 nav a:hover {
-    background-color: skyblue;
-    
-    color: #003047;
+  background-color: skyblue;
+  
+  color: #003047;
 }
 
 nav a:active {
-    background-color: rgb(56, 95, 110);
+  background-color: rgb(56, 95, 110);
 }
 
 /* Class to be used for a nav button accompanied by a logo */
 .logo {
-    padding: 0 0.5em 0 0; /* expands button left and right */
-    min-height: 2.5em;
-        /* sets the height of the navbar */
+  padding: 0 0.5em 0 0; /* expands button left and right */
+  min-height: 2.5em;
+      /* sets the height of the navbar */
 }
 
 /* Ease in the nav bar when burger menu is clicked */
 nav.visible {
-    position: absolute;
-    top: 0rem;
-    transition: top ease-in 500ms;
+  position: absolute;
+  top: 0rem;
+  transition: top ease-in 500ms;
 }
 
 @media (max-width: 810px) {
-    /* Switch to vertical nav bar */
-    nav {
-        display: block;
+  /* Switch to vertical nav bar */
+  nav {
+      display: block;
 
-        position: absolute;
-        top: -24rem;    /* When screen is too small, hide navbar */
+      position: absolute;
+      top: -24rem;    /* When screen is too small, hide navbar */
  
-        width: 100%;
-        transition: top ease-out 300ms;
-    }
+      width: 100%;
+      transition: top ease-out 300ms;
+  }
 
-    nav ul {
-        flex-direction: column;
-    }
+  nav ul {
+      flex-direction: column;
+  }
 
-    /* Make each button 100% width and center text */
-    nav a {
-        width: 100%;
-        margin: auto; /* fits buttons snugly horizontally */
-    }
+  /* Make each button 100% width and center text */
+  nav a {
+      width: 100%;
+      margin: auto; /* fits buttons snugly horizontally */
+  }
 
 }
 
 /* When screen is too big, hide burger menu */
 @media (min-width: 810px) {
-    .hamburger-menu {
-        display: none;
-    }
+  .hamburger-menu {
+      display: none;
+  }
 }
 
 /********************/
@@ -246,53 +246,53 @@ nav.visible {
 /********************/
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .hero-section {
-    height: 70vh; /* In narrow screens, takes the rest of the view power below the nav bar */
+  height: 70vh; /* In narrow screens, takes the rest of the view power below the nav bar */
 }
 
 header h1 {
-    text-align: center;
-    padding: 0;
-    margin-top: 1em;
+  text-align: center;
+  padding: 0;
+  margin-top: 1em;
 }
 
 header p {
-    text-align: center;
-    font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
 
-    margin: 0 0 3em 0; 
+  margin: 0 0 3em 0; 
 }
 
 .call-to-action {
-    background: linear-gradient(#fab735, #8c5d00);
-    
-    color: black;
-    font-size: 1.5rem;
+  background: linear-gradient(#fab735, #8c5d00);
+  
+  color: black;
+  font-size: 1.5rem;
 
-    margin-bottom: 5em;
+  margin-bottom: 5em;
 }
 
 .call-to-action:hover {
-    background: linear-gradient(#8c5d00 10%, #fab735 90%);
-    color: #ffffff;
+  background: linear-gradient(#8c5d00 10%, #fab735 90%);
+  color: #ffffff;
 }
 
 @media (max-width: 650px) {
-    .hero-section {
-        height: 100vh;
-    }
-    header h1 {
-        font-size: 3rem;
-    }
-    header p {
-        font-size: 1.2rem;
-    }
+  .hero-section {
+      height: 100vh;
+  }
+  header h1 {
+      font-size: 3rem;
+  }
+  header p {
+      font-size: 1.2rem;
+  }
 }
 
 /*******************/
@@ -303,135 +303,135 @@ header p {
 /* FORMS */
 
 form {
-    margin: 2em 0.5em; /* Leave some space between form and other content. */
+  margin: 2em 0.5em; /* Leave some space between form and other content. */
 }
 
 fieldset {
-    border: 0;
+  border: 0;
 }
 
 legend {
-    text-decoration: underline;
-    font-size: 1.5rem;
-    margin: 0.5em auto 0 auto;
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin: 0.5em auto 0 auto;
 }
 
 .input-field {
-    position: relative;
+  position: relative;
 }
 
 form label {
-    /* Centers the text next to the box. */
-    display: flex;
-    align-items: center; 
-    margin: 0.5em auto 0.1em auto;
+  /* Centers the text next to the box. */
+  display: flex;
+  align-items: center; 
+  margin: 0.5em auto 0.1em auto;
 }
 
 form:hover {
-    box-shadow: 1px 1px 4px grey;
+  box-shadow: 1px 1px 4px grey;
 }
 
 input, textarea {
-    border-radius: 2px;
-    padding: 4px;
+  border-radius: 2px;
+  padding: 4px;
 }
 
 textarea {
-    max-width: 25ch; /* limit horizontal resizing.*/
-    min-height: 2ch;
+  max-width: 25ch; /* limit horizontal resizing.*/
+  min-height: 2ch;
 }
 
 .checkbox {
-    margin: 5px;
+  margin: 5px;
 }
 
 label.required::after {
-    content: '*';
-    color: red;
+  content: '*';
+  color: red;
 }
 
 .registration-form .button {
-    margin-bottom: 0; /* Tweaking bottom margin of buttons inside login/registration forms. */
+  margin-bottom: 0; /* Tweaking bottom margin of buttons inside login/registration forms. */
 }
 
 input:focus:invalid  {
-    background-color: hsla(360, 77%, 72%, 0.64);
-    border: 0px;
-    transition: background-color 300ms;
+  background-color: hsla(360, 77%, 72%, 0.64);
+  border: 0px;
+  transition: background-color 300ms;
 }
 
 input:focus:valid {
-    background-color: rgba(147, 239, 129, 0.64);
-    transition: background-color 300ms;
+  background-color: rgba(147, 239, 129, 0.64);
+  transition: background-color 300ms;
 }
 
 /* FORM TOOLTIPS */
 
 [role="tool-tip"] {
-    display: inline-block;
-    white-space: nowrap;
+  display: inline-block;
+  white-space: nowrap;
 
-    padding: 0.8em 1.0em;
-    background: white;
+  padding: 0.8em 1.0em;
+  background: white;
 
-    font-weight: 800;
-    color: black;
+  font-weight: 800;
+  color: black;
 
-    border: 1px solid black;
-    border-radius: 1em;
+  border: 1px solid black;
+  border-radius: 1em;
 
-    position: absolute; /* Position this element relative to the div it's in. In combination with a relative parent, it is position relative to that parent. */
-    left: 105%;
+  position: absolute; /* Position this element relative to the div it's in. In combination with a relative parent, it is position relative to that parent. */
+  left: 105%;
 
-    transform: scale(0); /* Essentially: This is display none */
+  transform: scale(0); /* Essentially: This is display none */
 
-    transition: transform ease-out 100ms; 
+  transition: transform ease-out 100ms; 
 }
 
 /* When an input field is focused and invalid, apply this css to the next tool-tip */
 input:invalid:focus + [role="tool-tip"] {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 /* CONTACT US FORM */
 
 .letter-box {
-    background-image: url("../images/airmail.jpg");
+  background-image: url("../images/airmail.jpg");
 
-    width: 34em;
-    min-width: 16em;
+  width: 34em;
+  min-width: 16em;
 
-    margin: 3em 1em; /* introduces margin between letter box and other elements. */
+  margin: 3em 1em; /* introduces margin between letter box and other elements. */
 
-    /* 3D letter effect */
-    box-shadow: 1px 1px 8px grey;
-    border-radius: 3px;
+  /* 3D letter effect */
+  box-shadow: 1px 1px 8px grey;
+  border-radius: 3px;
 }
 
 .letter-paper {
-    background-image: url("../images/letterpaper.png"); /* Old Paper effect */
+  background-image: url("../images/letterpaper.png"); /* Old Paper effect */
 
-    border-radius: 3px;
+  border-radius: 3px;
 
-    width: 100%;
+  width: 100%;
 
-    margin: 0.5em;
+  margin: 0.5em;
 }
 
 /* Readjust for narrow screens */
 @media (max-width: 30rem) {
-    .letter-box label {
-        flex-direction: column;
-    }
+  .letter-box label {
+      flex-direction: column;
+  }
 
-    /* modifications for tooltips. */
+  /* modifications for tooltips. */
 
-    [role="tool-tip"]{
-        font-size: 0.70rem;
-        left: 0;
-        bottom: 60%;
-        z-index: 1;
-    }
+  [role="tool-tip"]{
+      font-size: 0.70rem;
+      left: 0;
+      bottom: 60%;
+      z-index: 1;
+  }
 }
 
 /*******************/
@@ -439,13 +439,13 @@ input:invalid:focus + [role="tool-tip"] {
 /*******************/
 
 footer {
-    width: 100%;
-    height: 2.25rem;
+  width: 100%;
+  height: 2.25rem;
 
-    background-color: rgb(197, 197, 197);
+  background-color: rgb(197, 197, 197);
 }
 
 .gitlogo {
-    width: 2em;
-    padding: 0.2em;
+  width: 2em;
+  padding: 0.2em;
 }

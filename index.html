@@ -12,18 +12,69 @@
 
   .gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
 
     max-width: 100%;
     margin: auto
-    }
-    
-  /* .gallery img {
-    margin: 10px;
-    } */
+  }
+  
+  .destination-card {
+    display: flex;
+    flex-direction: column;
 
-  .body {
+    background-size: cover;
+    background-position: center;
+
+    color: black;
+
+    width: 1000px;
+
+    margin: 20px;
+  }
+
+  .destination-card .align-self-end {
+    background: #ffc34bad
+  }
+
+  .destination-card .align-self-start {
+    background: rgba(2, 56, 78, 0.685);
+    color: white;
+  }
+
+  .destination-card .align-self-end .button {
+    background-color: rgb(2, 57, 78);
+    color: white;
+  }
+
+  .destination-card div {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .destination-card h2 {
+    margin-top: 0px;
+  }
+
+  .destination-card p {
+    text-align: justify;
+  }
+
+  .destination-card .button {
+    border-radius: 0.4em 1em;
+  }
+
+  /* .gallery img {
+    flex-grow: 3;
+    min-width: 300px;
+  } */
+
+
+  /* .gallery img {
+  margin: 10px;
+  } */
+
+  /* .body {
     background: black;
   }
   .gallery section {
@@ -54,7 +105,7 @@
 
     text-align: justify;
     text-justify: auto;
-  }
+  } */
   </style>
 </head>
 
@@ -86,7 +137,7 @@
 
   <main class="center flex-column">
       
-    <section class="gallery">
+    <section class="gallery flex-column">
     </section>
 
     <div class="letter-box center" id="contact-us"> 

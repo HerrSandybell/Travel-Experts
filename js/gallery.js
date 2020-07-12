@@ -40,7 +40,7 @@ const imgList = [
   Tuscany is a wealth of historic treasures considered one-of-a-kind worldwide: the region is full of art cities and little picturesque villages with a huge cultural heritage, but is also extraordinary because of its fascinating landscape, with its bucolic countryside and rolling hills. Not to mention its amazing islands and coastal areas, its protected parks and, last but not least, its food, simple with authentic flavors, and its wines, ranked among the best in the world: to put it simply, there are really many reasons to visit Tuscany. `
   },{location: `The Bahamas`,
   num: `6`,
-  id: `108`,
+  id: `643`,
   site: `https://www.bahamas.com/`,
   description: `When beach lovers dream of the perfect stretch of powdery sand, lapped by seas in sublime shades of blue, they're probably dreaming of the Bahamas. Encompassing 700 islands and more than 2,000 small cays sprinkled across the Atlantic Ocean and Caribbean Sea, this tropical paradise lies only 80 kilometers from Florida at its closest point. Once a haven for pirates and Loyalists, the islands are now a playground for the rich and famous and anyone who enjoys world-class fishing, boating, diving, snorkeling, and sailing. 
   </br></br>
@@ -52,11 +52,11 @@ let galleryTemplate = '';
 
 imgList.forEach(function(item) {
   galleryTemplate += 
-    `<section>
-      <img src='https://picsum.photos/id/${item.id}/600/500' alt='Picture of ${item.location}'>
-      <div>
-        <a href='${item.site}' title='${item.location} website link' target='_blank'><h2>${item.location}</h2></a>
+    `<section class='destination-card'>
+      <div class='destination-info'>
+        <h2>${item.location}</h2>
         <p>${item.description}</p>
+        <a class='button' href='${item.site}' title='${item.location} website link' target='_blank'>Learn More</a>
       </div>
     </section>`
 });
@@ -64,14 +64,23 @@ imgList.forEach(function(item) {
 gallery.innerHTML = galleryTemplate;
 
 // The children of gallery are assembled and converted to an array (Although they are array-like, they aren't treated as arrays)
-destinationCards = Array.from(document.querySelector('.gallery').children)
+destinationCards = Array.from(document.querySelectorAll('.destination-card'))
 
 // This function sets the class attribute for all div children of a gallery class element. And alternates flex direction among them.
 for (i=0; i < destinationCards.length; i++) {
+  destinationInfo = destinationCards[i].querySelector('.destination-info');
+
+  destinationCards[i].setAttribute(`style`, `background-image: url('https://picsum.photos/id/${imgList[i].id}/1000/1000')`)
+  
+  destinationInfo.classList.add(`flex-column`, `center`);
+  
   if (i % 2) {
-    destinationCards[i].setAttribute('class', 'center destination-card');
+    destinationInfo.classList.add(`align-self-start`);
   } else {
-    destinationCards[i].setAttribute('class', 'center destination-card row-reverse');
+    destinationInfo.classList.add(`align-self-end`)
   }
+  //  else {
+  //   destinationCards[i].setAttribute('class', 'center destination-card row-reverse');
+  // }
 }
 // END GALLERY CODE //

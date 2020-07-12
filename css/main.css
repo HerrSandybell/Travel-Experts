@@ -380,7 +380,7 @@ input:focus:valid {
     border: 1px solid black;
     border-radius: 1em;
 
-    position: absolute; /* Position this element relative to the div it's in. */
+    position: absolute; /* Position this element relative to the div it's in. In combination with a relative parent, it is position relative to that parent. */
     left: 105%;
 
     transform: scale(0); /* Essentially: This is display none */
@@ -428,7 +428,7 @@ input:invalid:focus + [role="tool-tip"] {
 
     [role="tool-tip"]{
         font-size: 0.70rem;
-        left: 00%;
+        left: 0;
         bottom: 60%;
         z-index: 1;
     }

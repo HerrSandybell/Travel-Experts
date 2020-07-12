@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        max-width: 1000px;
+        margin: auto
+      }
+      
+    /* .gallery img {
+        margin: 10px;
+      } */
+
+    .body {
+        background: black;
+    }
+    .gallery div {
+        background-color: #fab735;
+        color: black;
+
+        width: 95vw;
+        min-width: 36ch;
+
+        padding: 1em;
+        margin: 10px auto;
+
+        border: 4px solid rgb(2, 57, 78);
+        border-radius: 15px;
+    }
+    .gallery img {
+        width: 95%;
+        border: 1px solid black;
+    }
+    .gallery h2 {
+        text-align: center;
+    }
+    .gallery p {
+        width: 95%;
+
+        text-align: justify;
+        text-justify: auto;
+    }
     </style>
 </head>
 
@@ -38,8 +81,11 @@
 
     </header>
 
-    <main class="center">
+    <main class="center flex-vertical">
         
+        <section class="gallery">
+        </section>
+
         <div class="letter-box center" id="contact-us"> 
             <form
             action="https://formspree.io/xjvaarpr"

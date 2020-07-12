@@ -56,8 +56,8 @@ let galleryTemplate = '';
 
 imgList.forEach(function(item) {
   galleryTemplate += 
-    `<div class='destination-card center flex-vertical'>
-      <img src='https://picsum.photos/id/${item.id}/300/250' alt='Picture of ${item.location}'>
+    `<div class=''>
+      <img src='https://picsum.photos/id/${item.id}/600/500' alt='Picture of ${item.location}'>
       <a href='${item.site}' title='${item.location} website link' target='_blank'><h2>${item.location}</h2></a>
       <p>${item.description}</p>
     </div>`
@@ -72,6 +72,17 @@ imgList.forEach(function(item) {
 
 // document.querySelector('section').classList.add('center flex-vertical');
 gallery.innerHTML = galleryTemplate;
+
+// The children of gallery are assembled and converted to an array (Although they are array-like, they aren't treated as arrays)
+destinationCards = Array.from(document.querySelector('.gallery').children)
+
+// This function sets the class attribute for all div children of a gallery class element.
+destinationCards.forEach(function(item) {
+  console.log(item);
+  item.setAttribute('class', 'center flex-vertical destination-card');
+});
+
+
 
 // END GALLERY CODE //
 

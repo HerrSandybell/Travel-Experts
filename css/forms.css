@@ -16,11 +16,8 @@ legend {
   margin: 0.5em auto 0 auto;
 }
 
-.input-field {
-  position: relative;
-}
-
 form label {
+  /* text-align: center; */
   margin: 0.5em auto 0.1em auto;
 }
 
@@ -29,6 +26,7 @@ form:hover {
 }
 
 input, textarea {
+  /* margin: auto; */
   border-radius: 2px;
   padding: 4px;
 }
@@ -40,6 +38,17 @@ textarea {
 
 .checkbox {
   margin: 5px;
+}
+
+input:focus:invalid  {
+  background-color: hsla(360, 77%, 72%, 0.64);
+  border: 0px;
+  transition: background-color 300ms;
+}
+
+input:focus:valid {
+  background-color: rgba(147, 239, 129, 0.64);
+  transition: background-color 300ms;
 }
 
 label.required::after {
@@ -60,6 +69,7 @@ label.required::after {
 .registration-form a {
   color: #ffb521;
 }
+
 .registration-form a:hover {
   color: rgb(174, 16, 50);
 }
@@ -68,18 +78,12 @@ label.required::after {
   margin-bottom: 0; /* Tweaking bottom margin of buttons inside login/registration forms. */
 }
 
-input:focus:invalid  {
-  background-color: hsla(360, 77%, 72%, 0.64);
-  border: 0px;
-  transition: background-color 300ms;
-}
-
-input:focus:valid {
-  background-color: rgba(147, 239, 129, 0.64);
-  transition: background-color 300ms;
-}
-
 /* FORM TOOLTIPS */
+
+/* Input fields are relative to help position the tooltips. */
+.input-field {
+  position: relative;
+}
 
 [role="tool-tip"] {
   display: inline-block;
@@ -135,19 +139,22 @@ input:invalid:focus + [role="tool-tip"] {
 }
 
 /* Responsive Forms */
+/* @media (max-width: 30rem) {
+  .letter-box label {
+    flex-direction: column;
+  }
+} */
 @media (max-width: 30rem) {
   .letter-box label {
-      flex-direction: column;
+    flex-direction: column;
   }
-
-  /* modifications for tooltips. */
-  [role="tool-tip"]{
-      font-size: 0.70rem;
-      left: 0;
-      bottom: 60%;
-      z-index: 1;
-  }
-}
+  span[role="tool-tip"] {
+    font-size: 0.70rem;
+    left: 0;
+    bottom: 60%;
+    z-index: 1;
+  } 
+} 
 
 @media (max-height: 700px) {
   .registration-form {

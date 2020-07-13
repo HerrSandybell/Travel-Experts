@@ -48,6 +48,24 @@ label.required::after {
   color: red;
 }
 
+/* Form styles */
+
+form {
+  background-color: rgb(2, 57, 78);
+  color: white;
+  /* Add a thick border to make form stand out */
+  border: 2px solid white; 
+  border-radius: 8px;
+}
+
+form a {
+  color: #ffb521;
+}
+form a:hover {
+  color: rgb(174, 16, 50);
+}
+
+
 .registration-form .button {
   margin-bottom: 0; /* Tweaking bottom margin of buttons inside login/registration forms. */
 }
@@ -117,7 +135,7 @@ input:invalid:focus + [role="tool-tip"] {
   margin: 0.5em;
 }
 
-/* Readjust for narrow screens */
+/* Responsive Forms */
 @media (max-width: 30rem) {
   .letter-box label {
       flex-direction: column;
@@ -129,5 +147,16 @@ input:invalid:focus + [role="tool-tip"] {
       left: 0;
       bottom: 60%;
       z-index: 1;
+  }
+}
+
+@media (max-height: 500px) {
+  .registration-form {
+    font-size: 75%;
+    justify-content: flex-end !important; /* Create more space for the page title. */
+    margin: 5px;
+  }
+  .registration-form legend {
+    font-size: 1rem;
   }
 }

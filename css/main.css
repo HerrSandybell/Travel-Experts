@@ -50,22 +50,6 @@
   margin: auto;
 }
 
-/* Form styles */
-
-.registration-form {
-  background-color: rgb(2, 57, 78);
-  color: white;
-  /* Add a thick border to make form stand out */
-  border: 2px solid white; 
-  border-radius: 8px;
-}
-
-.registration-form a {
-  color: #ffb521;
-}
-.registration-form a:hover {
-  color: rgb(174, 16, 50);
-}
 
 
 /* BUTTONS */
@@ -247,10 +231,13 @@ nav.visible {
 
 }
 
-/* When screen is too big, hide burger menu */
+/* When screen is too big, hide burger menu and lift title up. */
 @media (min-width: 810px) {
   .hamburger-menu {
       display: none;
+  }
+  .page-title {
+    top: 0;
   }
 }
 
@@ -315,8 +302,18 @@ header p {
 /* This class relocates a title to the top of the page without affecting the page size */
 .page-title {
   position: absolute;
-  top: 0;
+  top: 2em;
   z-index: -1; /* -1 Z index needed to hide title under burger menu */
+}
+
+.page-title h1 {
+  margin: 20px;
+}
+
+@media (max-height: 700px) {
+  .page-title {
+    display: block;
+  }
 }
 
 /*******************/

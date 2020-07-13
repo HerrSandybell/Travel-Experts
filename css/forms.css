@@ -21,9 +21,6 @@ legend {
 }
 
 form label {
-  /* Centers the text next to the box. */
-  display: flex;
-  align-items: center; 
   margin: 0.5em auto 0.1em auto;
 }
 
@@ -50,9 +47,9 @@ label.required::after {
   color: red;
 }
 
-/* Form styles */
+/* Registration and Log in forms */
 
-form {
+.registration-form form {
   background-color: rgb(2, 57, 78);
   color: white;
   /* Add a thick border to make form stand out */
@@ -60,10 +57,10 @@ form {
   border-radius: 8px;
 }
 
-form a {
+.registration-form a {
   color: #ffb521;
 }
-form a:hover {
+.registration-form a:hover {
   color: rgb(174, 16, 50);
 }
 

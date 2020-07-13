@@ -70,12 +70,12 @@
   }
   .destination-info {
     width: 100%;
-    font-size: smaller;
+    font-size: 0.7rem;
   }
 }
 
 @media (max-height: 850px) {
   .destination-info {
-    font-size: smaller;
+    font-size: 0.7rem;
   }
 }

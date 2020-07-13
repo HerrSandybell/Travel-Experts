@@ -8,3 +8,7 @@ burgerBtn.addEventListener("click", function(){
     navBar.classList.toggle('visible');
     burgerBtn.classList.toggle('toggled');
 })
+
+document.querySelector('main').addEventListener("click", function(){
+  navBar.classList.remove('visible');
+})

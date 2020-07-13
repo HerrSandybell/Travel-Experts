@@ -50,8 +50,6 @@
   margin: auto;
 }
 
-
-
 /* BUTTONS */
 
 .button {
@@ -228,7 +226,6 @@ nav.visible {
       width: 100%;
       margin: auto; /* fits buttons snugly horizontally */
   }
-
 }
 
 /* When screen is too big, hide burger menu and lift title up. */
@@ -259,7 +256,6 @@ header {
 header h1 {
   text-align: center;
   padding: 0;
-  margin-top: 1em;
 }
 
 header p {
@@ -295,6 +291,15 @@ header p {
   }
 }
 
+@media (max-height: 540px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+}
+
 /*******************/
 /****** MAIN *******/
 /*******************/
@@ -306,13 +311,15 @@ header p {
   z-index: -1; /* -1 Z index needed to hide title under burger menu */
 }
 
-.page-title h1 {
+/* .page-title h1 {
   margin: 20px;
-}
+} */
 
 @media (max-height: 700px) {
   .page-title {
-    display: block;
+    position: relative;
+    top: 0;
+    margin: 10px;
   }
 }
 

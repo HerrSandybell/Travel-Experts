@@ -65,7 +65,6 @@ form a:hover {
   color: rgb(174, 16, 50);
 }
 
-
 .registration-form .button {
   margin-bottom: 0; /* Tweaking bottom margin of buttons inside login/registration forms. */
 }
@@ -127,6 +126,7 @@ input:invalid:focus + [role="tool-tip"] {
 
 .letter-paper {
   background-image: url("../images/letterpaper.png"); /* Old Paper effect */
+  color: black;
 
   border-radius: 3px;
 
@@ -150,13 +150,18 @@ input:invalid:focus + [role="tool-tip"] {
   }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 700px) {
   .registration-form {
     font-size: 75%;
-    justify-content: flex-end !important; /* Create more space for the page title. */
     margin: 5px;
   }
   .registration-form legend {
     font-size: 1rem;
+  }
+}
+@media (max-height: 540px){
+  .registration-form {
+    font-size: 60%;
+    justify-content: flex-end !important; /* Create more space for the page title. */
   }
 }

@@ -313,10 +313,6 @@ header p {
   z-index: -1; /* -1 Z index needed to hide title under burger menu */
 }
 
-/* .page-title h1 {
-  margin: 20px;
-} */
-
 @media (max-height: 700px) {
   .page-title {
     position: relative;

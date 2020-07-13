@@ -158,10 +158,21 @@ input:invalid:focus + [role="tool-tip"] {
   .registration-form legend {
     font-size: 1rem;
   }
+  .registration-form h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  .registration-form form {
+    margin: 0 auto;
+  }
 }
-@media (max-height: 540px){
+@media (max-height: 450px){
   .registration-form {
     font-size: 60%;
-    justify-content: flex-end !important; /* Create more space for the page title. */
+    /* justify-content: flex-end !important;  */
+  }
+  .registration-form h1 {
+    font-size: 2rem;
+    margin: 0;
   }
 }

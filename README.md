@@ -17,6 +17,8 @@ The layout was designed to emphasize the big sweeping backgrounds of the hero se
 
 As this is the first project I've undertaken where the goal was to create a visually-pleasing and functional interface, I struggled in the beginning with balancing colors and the layout of the website itself. I had to learn about color theory as well as advance my knowledge of flex-boxes in order to tackle this. Flex-box is used liberally. However, some parts (especially the forms) would have benefited more from gridbox application.
 
+Layout continues to be a challenge. CSS needs to be further cleaned and optimized.
+
 ## Next Steps
 
-The next step for this website is to create a functional gallery, as well as connect it to the back end.
+The next step for this website is to host it via node.

@@ -66,7 +66,7 @@ gallery.innerHTML = galleryTemplate;
 // The children of gallery are assembled and converted to an array (Although they are array-like, they aren't treated as arrays)
 destinationCards = Array.from(document.querySelectorAll('.destination-card'))
 
-// This function sets the class attribute for all div children of a gallery class element. And alternates flex direction among them.
+// This function sets the class attribute for all div children of a gallery class element. And alternates alignment direction among them.
 for (i=0; i < destinationCards.length; i++) {
   destinationInfo = destinationCards[i].querySelector('.destination-info');
 
@@ -79,8 +79,5 @@ for (i=0; i < destinationCards.length; i++) {
   } else {
     destinationInfo.classList.add(`align-self-end`)
   }
-  //  else {
-  //   destinationCards[i].setAttribute('class', 'center destination-card row-reverse');
-  // }
 }
 // END GALLERY CODE //

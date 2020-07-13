@@ -1,0 +1,81 @@
+/*******************/
+/***** GALLERY *****/
+/*******************/
+
+.gallery {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+
+  max-width: 100%;
+  margin: auto
+}
+
+/* The destination card contains the image as a background, and the info card */
+.destination-card {
+  display: flex;
+  flex-direction: column;
+
+  background-size: cover;
+  background-position: center;
+
+  color: black;
+
+  max-width: 1000px;
+
+  margin: 20px auto;
+}
+
+.destination-card .align-self-start {
+  background: rgba(2, 56, 78, 0.685);
+  color: white;
+}
+
+/* Info card backgrounds are yellow with blue buttons. */
+.destination-card .align-self-end {
+  background: #ffc34bad
+}
+
+.destination-card .align-self-end .button {
+  background-color: rgb(2, 57, 78);
+  color: white;
+}
+
+/* Destination info card styling */
+.destination-info {
+  width: 40%;
+  padding: 10px;
+}
+
+.destination-card h2 {
+  margin: 0px;
+  text-align: center;
+}
+
+.destination-card p {
+  text-align: justify;
+}
+
+.destination-card .button {
+  border-radius: 0.4em 1em;
+  margin: 0;
+}
+
+/* Responsiveness. Change position of info card to bottom of image. */
+@media (orientation:portrait) and (max-width: 800px) {
+  .destination-card {
+    background-position: top;
+    justify-content: flex-end;
+    height: 95vh;
+  }
+  .destination-info {
+    width: 100%;
+    font-size: smaller;
+  }
+}
+
+@media (max-height: 850px) {
+  .destination-info {
+    font-size: smaller;
+  }
+}

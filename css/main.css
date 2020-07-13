@@ -418,7 +418,8 @@ input:invalid:focus + [role="tool-tip"] {
 .letter-box {
   background-image: url("../images/airmail.jpg");
 
-  width: 34em;
+  max-width: 34em;
+  width: 95%;
   min-width: 16em;
 
   margin: 3em 1em; /* introduces margin between letter box and other elements. */
@@ -445,7 +446,6 @@ input:invalid:focus + [role="tool-tip"] {
   }
 
   /* modifications for tooltips. */
-
   [role="tool-tip"]{
       font-size: 0.70rem;
       left: 0;

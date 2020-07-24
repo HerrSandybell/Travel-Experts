@@ -4,8 +4,6 @@
 
 .gallery {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
 
   max-width: 100%;
   margin: auto
@@ -41,22 +39,27 @@
   color: white;
 }
 
+/* Hide the "image" but still allow for the semantics to be detected by screen readers and engines. */
+.destination-card img {
+  display: none;
+}
+
 /* Destination info card styling */
 .destination-info {
   width: 40%;
   padding: 10px;
 }
 
-.destination-card h2 {
+.destination-info h2 {
   margin: 0px;
   text-align: center;
 }
 
-.destination-card p {
+.destination-info p {
   text-align: justify;
 }
 
-.destination-card .button {
+.destination-info .button {
   border-radius: 0.4em 1em;
   margin: 0;
 }
@@ -70,12 +73,6 @@
   }
   .destination-info {
     width: 100%;
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-height: 850px) {
-  .destination-info {
     font-size: 0.7rem;
   }
 }

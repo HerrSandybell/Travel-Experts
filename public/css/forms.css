@@ -13,11 +13,11 @@ fieldset {
 legend {
   text-decoration: underline;
   font-size: 1.5rem;
-  margin: 0.5em auto 0 auto;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 
 form label {
-  /* text-align: center; */
   margin: 0.5em auto 0.1em auto;
 }
 
@@ -26,14 +26,13 @@ form:hover {
 }
 
 input, textarea {
-  /* margin: auto; */
   border-radius: 2px;
   padding: 4px;
 }
 
 textarea {
-  max-width: 25ch; /* limit horizontal resizing.*/
-  min-height: 2ch;
+  max-width: 20ch; /* limit horizontal resizing.*/
+  min-height: 4ch;
 }
 
 .checkbox {
@@ -58,7 +57,7 @@ label.required::after {
 
 /* Registration and Log in forms */
 
-.registration-form form {
+.registration-form {
   background-color: rgb(2, 57, 78);
   color: white;
   /* Add a thick border to make form stand out */
@@ -138,12 +137,16 @@ input:invalid:focus + [role="tool-tip"] {
   margin: 0.5em;
 }
 
-/* Responsive Forms */
-/* @media (max-width: 30rem) {
-  .letter-box label {
-    flex-direction: column;
-  }
-} */
+.letter-box label {
+  text-align: center;
+}
+
+.letter-box input,
+.letter-box textarea {
+margin-right: auto;
+margin-left: auto;
+}
+
 @media (max-width: 30rem) {
   .letter-box label {
     flex-direction: column;
@@ -175,7 +178,6 @@ input:invalid:focus + [role="tool-tip"] {
 @media (max-height: 450px){
   .registration-form {
     font-size: 60%;
-    /* justify-content: flex-end !important;  */
   }
   .registration-form h1 {
     font-size: 2rem;

@@ -66,7 +66,7 @@
   letter-spacing: 0.05em;
 
   padding: 0.5em 1.0em;
-  margin: 1em 0;
+  margin: 1em auto;
 
   border: 0;
   border-radius: 1em;
@@ -255,7 +255,7 @@ header {
   height: 70vh; /* In narrow screens, takes the rest of the view power below the nav bar */
 }
 
-header h1 {
+h1 {
   text-align: center;
   padding: 0;
 }
@@ -283,18 +283,18 @@ header p {
 
 @media (max-width: 650px), (max-height: 650px) {
   .hero-section {
-      height: 100vh;
+    height: 100vh;
   }
-  .hero-section h1 {
-      font-size: 3rem;
+  header h1 {
+    font-size: 3rem;
   }
   .hero-section p {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-height: 540px) {
-  .hero-section h1 {
+  header h1 {
     font-size: 2.5rem;
   }
   .hero-section p {
@@ -306,20 +306,45 @@ header p {
 /****** MAIN *******/
 /*******************/
 
-/* This class relocates a title to the top of the page without affecting the page size */
+/* This class relocates an h1 title to the top of the page without affecting the page size */
 .page-title {
   position: absolute;
-  top: 2em;
+  top: 10px;
   z-index: -1; /* -1 Z index needed to hide title under burger menu */
+  width: 100%;
 }
 
 @media (max-height: 700px) {
   .page-title {
     position: relative;
     top: 0;
-    margin: 10px;
+    margin: 10px auto 0 auto;
   }
 }
+
+/* Destination showcase */
+/************************/
+
+.container {
+  background: rgb(2, 57, 78);
+  color: white;
+  margin: 20px auto;
+  padding: 20px;
+
+  border: 3px solid #fab735;
+  border-radius: 1em;
+
+  text-align: center;
+}
+
+.container img {
+  max-width: 500px;
+}
+
+.container p {
+  max-width: 80ch;
+}
+
 
 /*******************/
 /***** FOOTER ******/

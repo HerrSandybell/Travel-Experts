@@ -1,0 +1,32 @@
+extends layout.pug
+
+block title
+  title Travel Experts: Register
+
+block form
+  form.center.registration-form(action='https://formspree.io/xrgyyjwg' method='POST')
+    fieldset.center.flex-column
+      legend Registration Form
+      .input-field.center.flex-column
+        label.required(for='user-email') Email
+        input#user-email(type='email' name='registration-email' required='')
+        span(role='tool-tip') Valid Email Required.
+      .input-field.center.flex-column
+        label.required(for='user-name') Username
+        input#user-name(type='text' name='username' required='')
+        span(role='tool-tip') You must enter a username.
+      .input-field.center.flex-column
+        label.required(for='user-password') Password
+        input#user-password(type='password' name='password' minlength='8' required='')
+        span(role='tool-tip') Password must be minimum 8 characters.
+      .input-field.center.flex-column
+        label.required(for='password-confirm') Confirm Password
+        input#password-confirm(type='password' name='password-confirm' minlength='8' required='')
+        span(role='tool-tip') Password must be minimum 8 characters.
+      label(for='newsletter')
+        | Sign up to your newsletter?
+        input#newsletter.checkbox(type='checkbox' name='newsletter')
+      button.button(type='submit') Register
+      p
+        | Already have an account? 
+        a(href='login') Log in.

@@ -1,0 +1,21 @@
+extends layout.pug
+
+block title
+  title Travel Experts: Login
+
+block form
+  form.center.flex-column.registration-form(action="https://formspree.io/mqkyyjbe" method="POST")
+    fieldset.center.flex-column
+      legend Login
+      .input-field.center.flex-column
+        label.required(for='user-email') Email:
+        input#user-email(type='email' name='login-email' data-tool-tip='Enter your account email.' required='')
+        span(role='tool-tip') Enter your account email.
+      .input-field.center.flex-column
+        label.required(for='user-password') Password:
+        input#user-password(type='password' name='password' required='')
+        span(role='tool-tip') Enter your account password
+      button.button(type='submit') Log in
+      p
+        | Don&apos;t have an account? 
+        a(href='register') Register here.

@@ -1,6 +1,6 @@
 
-// fetch('https://travel-experts-site.herokuapp.com/api/destinations')
-fetch('http://localhost:3000/api/destinations')
+fetch('https://travel-experts-site.herokuapp.com/api/destinations')
+// fetch('http://localhost:3000/api/destinations')
   .then(response => response.json())
   .then(function(response) {
     let galleryTemplate = '';

@@ -13,12 +13,19 @@ The color template was chosen to emphasize the buttons. Their golden-yellow colo
 
 The layout was designed to emphasize the big sweeping backgrounds of the hero section and those of the registration pages. The aim is to invoke a sense of grandeur associated with vacationing in beautiful locations.
 
+## Database
+
+I constructed a database from popular travel destinations. One peculiar problem I faced was the destination 
+
 ## Challenges
+
+### Layout/Design
 
 As this is the first project I've undertaken where the goal was to create a visually-pleasing and functional interface, I struggled in the beginning with balancing colors and the layout of the website itself. I had to learn about color theory as well as advance my knowledge of flex-boxes in order to tackle this. Flex-box is used liberally. However, some parts (especially the forms) would have benefited more from gridbox application.
 
 Layout continues to be a challenge. CSS needs to be further cleaned and optimized.
 
-## Next Steps
+### express module and 404 routing.
 
-The next step for this website is to host it via node.
+My goal was to have any unknown route to reroute to a specific 404 page. However, I only managed to do that when the route is one deep (i.e., ./bla or ./gah). Anything deeper than that does route to the correct 404, but it is unable to fetch the scripts and css files, only showing the html file. I have yet to solve this issue.
+

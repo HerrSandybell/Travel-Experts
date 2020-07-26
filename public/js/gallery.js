@@ -1,6 +1,6 @@
 
-// fetch('https://travel-experts-site.herokuapp.com/api/destinations')
-fetch('http://localhost:3000/api/destinations')
+fetch('https://travel-experts-site.herokuapp.com/api/destinations')
+// fetch('http://localhost:3000/api/destinations')
   .then(response => response.json())
   .then(function(response) {
     let galleryTemplate = '';
@@ -10,7 +10,8 @@ fetch('http://localhost:3000/api/destinations')
         <img src="" alt="${item.location}">
         <figcaption class='destination-info flex-column center'>
           <h2>${item.title}</h2>
-          <p>${item.description}</p>
+          <p>${item.descriptionBasic}</p>
+          <p>${item.descriptionExpanded}</p>
           <a class='button' href='/${item.location}' title='${item.location} website link'>Learn More</a>
         </figcaption>
       </figure>`;

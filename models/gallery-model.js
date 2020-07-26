@@ -12,7 +12,8 @@ const gallerySchema = new mongoose.Schema(
     num:          Number,
     id:           String,
     site:         String,
-    description:  String
+    descriptionBasic:  String,
+    descriptionExpanded:  String,
   }
 );
 

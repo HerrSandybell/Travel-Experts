@@ -1,7 +1,8 @@
 extends layout
 
-//- block currentUrl
-//-   - let currentUrl = 
+block title
+  title Travel Experts:  
+    = title
 
 block main-content
   section.center.flex-column.container
@@ -9,4 +10,6 @@ block main-content
       = title
     img(src="https://picsum.photos/id/" + id + "/1000/1000")
     p
-      = description
+      = descriptionBasic
+    p
+      = descriptionExpanded

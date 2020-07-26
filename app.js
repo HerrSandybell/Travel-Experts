@@ -47,7 +47,6 @@ app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, './public')));
 
 app.get('/', function(request, response){
-  // galleryMaker();
   response.render('index',{});
 });
 
@@ -58,8 +57,6 @@ app.get('/register', function(request, response){
 app.get('/login', function(request, response){
   response.render('login',{});
 });
-
-
 
 // Find a specific destination and return it as an object to be used in destination-info. If it doesn't exist, go to 404 page.
 app.get('/:location', function(request, response){
@@ -76,11 +73,11 @@ app.get('/api/destinations', function(request, response){
     response.json(destinationDB);})
 });
 
+
 // if no, send a 404 error as a response to the browser
-app.use(function(req, res, next) {
-  res.status(404);
-  res.send('404: File Not Found');
-});
+app.get('*', function(req, res){
+  res.send('<h1>404: Page not found.</h1>');
+})
 
 // start up server
 const PORT = process.env.PORT || 3000;

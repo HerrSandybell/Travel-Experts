@@ -15,7 +15,7 @@ The layout was designed to emphasize the big sweeping backgrounds of the hero se
 
 ## Database
 
-I constructed a database from popular travel destinations. One peculiar problem I faced was the destination 
+I constructed a database from popular travel destinations. One peculiar problem I faced was the destination description, which I had originally divided into two paragraphs (an intro, and more info), separated by a /br. The issue is that when the description is inserted into JS, and then into innerHTML, the /br would render properly as a line break. But when it is called upon as a variable straight in the html, it will not render. So, I split the description into two values in the database.
 
 ## Challenges
 

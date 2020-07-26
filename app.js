@@ -4,13 +4,11 @@ const express = require('express');
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const cors = require("cors");
-// const galleryMaker = require('../custom-modules/gallery-maker.js')
+const moment = require('moment');
 
 // MODELS
 const destinationDB = require('./models/gallery-model.js');
 
-// Databases 
-// const gallerySeed = require('../custom-modules/gallery-mod.js');
 
 // hides credentials from repo
 const mongoDB = process.env.MONGODB_URL;
@@ -34,6 +32,12 @@ db.once('open', function() {
 // create express app
 const app = express();
 app.set('view engine', 'pug');
+
+// MOMENT/TIME
+const yearFormat="YYYY";
+app.locals.moment = moment;
+app.locals.yearFormat = yearFormat;
+console.log(moment());
 
 // cors origin URL - Allow inbound traffic from origin
 corsOptions = {
